@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Chang Ge">
+    <meta charset="utf-8">
+    <title>Samaritan Popup</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.5.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome-4.4.0.min.css">
+    <link rel="stylesheet" type="text/css" href="css/popup.css" />
+</head>
+<body>
+<div id="wrapper" class="container-fluid">
+
+    <div class="text-center">
+        <p><b>Samaritan helps find COI reviewers!</b></p>
+    </div>
+
+    <div>
+        <table id="tbl">
+            <tr>
+                <td><input type="text" id="author" placeholder="Author's DBLP page..."/></td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        Find conflict in recent
+        <select name="year" id="year" form="year">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="100">infinite</option>
+        </select>
+        years. </label>
+    </div>
+
+    <hr>
+
+    <div>
+        <div class="text-center">
+            <button id="tagButton">Tag COI reviewers!</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/popup.js"></script>
+
+</div>
+</body>
+</html>

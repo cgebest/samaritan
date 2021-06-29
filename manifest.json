@@ -1,0 +1,26 @@
+{
+  "name": "Samaritan",
+  "description": "Highlight conflict-of-interest reviewers on Microsoft CMT.",
+  "version": "0.1",
+  "author": "Chang Ge - cgebest AT gmail.com",
+  "manifest_version": 3,
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": [
+    "https://dblp.org/"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/samaritan-16.png",
+      "32": "/images/samaritan-32.png",
+      "48": "/images/samaritan-48.png",
+      "128": "/images/samaritan-128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/samaritan-16.png",
+    "32": "/images/samaritan-32.png",
+    "48": "/images/samaritan-48.png",
+    "128": "/images/samaritan-128.png"
+  }
+}
