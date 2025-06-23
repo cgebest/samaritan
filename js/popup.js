@@ -98,7 +98,18 @@ function highlightCOI(){
         let coi_arr = JSON.parse(result.coi);
         console.log('coi is retrieved: ', coi_arr);
 
-        const tbody = document.getElementsByTagName('tbody')[0];
+        const tbody = document.querySelector('#ReviewersTable tbody');
+
+        for (let i = 0; i < tbody.rows.length; i++) {
+            const row = tbody.rows[i];
+            for (let cell of row.cells) {
+                // cell.style.backgroundColor = "";
+                // cell.style.color = "";
+                // cell.style.fontWeight = "";
+                cell.style.boxShadow = "";
+            }
+        }
+
 
         let row, fname, lname;
         let count = 0;
@@ -115,13 +126,13 @@ function highlightCOI(){
                 }
             }//end check coi array
 
-            if(found){
-                // set current row <tr style="background-color:#FF0000">
-                row.outerHTML=row.outerHTML.replace("<tr>", '<tr style=\"background-color:#FF0000\">')
+            if (found) {
+                for (let cell of row.cells) {
+                    cell.style.boxShadow = "inset 0 0 0 9999px #FF0000";
+                }
                 count += 1;
             }
         }
-
         alert(`Please double check ${count} conflicting reviewers!`);
     });
 };
