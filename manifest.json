@@ -1,7 +1,7 @@
 {
   "name": "Samaritan",
   "description": "Highlight conflict-of-interest reviewers on Microsoft CMT.",
-  "version": "0.1",
+  "version": "0.2",
   "author": "Chang Ge - cgebest AT gmail.com",
   "manifest_version": 3,
   "permissions": ["storage", "activeTab", "scripting"],
